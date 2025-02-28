@@ -1,0 +1,8 @@
+为什么要用idl，便于idl调用c++的函数，idl是一种接口定义语言，如protobuf，thrift等，idl的
+
+优点：无论使用那种编程语言都能调用c++的函数，idl是一种中间语言，可以将c++的函数转换成idl的函数，idl的函数可以被任何编程语言调用。
+
+thrift
+依赖于thrift.go
+
+protobuf很多项目在使用，
