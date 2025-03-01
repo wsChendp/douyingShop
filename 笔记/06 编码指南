@@ -1,0 +1,26 @@
+code style：uber代码规范
+protobuf：dev/programming-guide代码规范
+
+status code:
+http状态码：Informational 1xx, Success 2xx, Redirection 3xx, Client Error 4xx(客户端的请求错误),
+Server Error 5xx
+
+log style: 不能打印日志的时候还会报错，don't print sensitive information
+
+conventional commit message: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+
+uber go style guide:
+    https://github.com/uber-go/guide
+
+protobuf style guide:
+    https://protobuf.dev/programming-guides/style/
+
+MDN HTTP response status codes：
+    https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status
+
+约定式提交：
+    https://www.conventionalcommits.org/zh-hans/v1.0.0/
+
+语义化版本：
+    https://semver.org/lang/zh-CN/
+

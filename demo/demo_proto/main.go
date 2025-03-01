@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/cloudwego/biz-demo/gomall/demo/demo_proto/biz/dal"
 	"github.com/cloudwego/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi/echo"
+	"github.com/cloudwego/biz-demo/gomall/demo/demo_proto/middleware"
 	"github.com/joho/godotenv"
 	consul "github.com/kitex-contrib/registry-consul"
 	"log"
@@ -55,7 +56,7 @@ func kitexInit() (opts []server.Option) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	opts = append(opts, server.WithRegistry(register))
+	opts = append(opts, server.WithRegistry(register), server.WithMiddleware(middleware.Middleware))
 
 	// klog
 	logger := kitexlogrus.NewLogger()

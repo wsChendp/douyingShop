@@ -1,0 +1,16 @@
+1、rpc(Remote Procedure Call)远程过程调用 kitex(支持thrift、grpc）
+    微服务之间的信息传递,客户端通过元数据和服务端进行信息的传递交互
+    可以加入中间层，但是win11不支持kitex的grpc
+
+2、restful api hezrt的http框架
+
+
+3、message middleware
+    decouple the message producer and consumer、
+    Load balancing & Transactional Throttling
+    Data Consistency & High Availability
+    Scalability & Elasticity
+    Resilience & Fault Tolerance
+
+such as : 1、kafka 2、rabbitmq 3、rocketmq
+使用nas的邮件服务，不需要使用消息中间件
