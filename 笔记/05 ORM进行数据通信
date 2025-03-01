@@ -1,0 +1,4 @@
+操作数据库
+使用标准库范围数据库操作，可以使用`database/sql`包，它提供了一组通用的接口，但是不提供数据库驱动。我们需要使用第三方的数据库驱动，比如`github.com/go-sql-driver/mysql`。
+grom是一个对`database/sql`进行了封装的ORM库，它提供了一些方便的接口，可以更方便的操作数据库。
+orm库有很多，比如`xorm`、`gorm`等，这里我们使用`gorm`。

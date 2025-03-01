@@ -29,5 +29,5 @@ func main() {
 		fmt.Println(33)
 		log.Println(err)
 	}
-	fmt.Println("%v", res)
+	fmt.Println(res)
 }
