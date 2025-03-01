@@ -2,6 +2,7 @@ package mysql
 
 import (
 	"fmt"
+	"github.com/cloudwego/biz-demo/gomall/demo/demo_proto/biz/model"
 	"github.com/cloudwego/biz-demo/gomall/demo/demo_proto/conf"
 	"os"
 
@@ -41,4 +42,5 @@ func Init() {
 		panic(err)
 	}
 	fmt.Println("MySQL Version:", version.Version)
+	DB.AutoMigrate(&model.User{})
 }
